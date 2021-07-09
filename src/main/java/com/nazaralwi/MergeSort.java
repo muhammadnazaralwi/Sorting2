@@ -1,7 +1,7 @@
 package com.nazaralwi;
 
 public class MergeSort {
-    void merge(int[] arr, int l, int m, int r) {
+    static void merge(int[] arr, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
         int[] L = new int[n1];
@@ -42,7 +42,7 @@ public class MergeSort {
         }
     }
 
-    void sort(int[] arr, int l, int r) {
+    static void sort(int[] arr, int l, int r) {
         if (l < r) {
             int m = l + (r - l) / 2;
 
