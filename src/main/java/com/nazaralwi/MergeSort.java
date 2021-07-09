@@ -8,11 +8,11 @@ public class MergeSort {
         int[] R = new int[n2];
 
         for (int i = 0; i < n1; ++i) {
-            L[i] = arr[l + 1];
+            L[i] = arr[l + i];
         }
 
         for (int j = 0; j < n2; ++j) {
-            R[j] = arr[m + l + j];
+            R[j] = arr[m + 1 + j];
         }
 
         int i = 0, j = 0;
@@ -44,7 +44,7 @@ public class MergeSort {
 
     void sort(int[] arr, int l, int r) {
         if (l < r) {
-            int m = l + (r - 1) / 2;
+            int m = l + (r - l) / 2;
 
             sort(arr, l, m);
             sort(arr, m + 1, r);

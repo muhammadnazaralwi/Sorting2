@@ -16,6 +16,8 @@ public class Main {
         System.out.println();
 
         System.out.println("After");
+        QuickSort.quickSort(data1, 0, data1.length-1);
+        mergeSort.sort(data2, 0, data2.length-1);
 
         System.out.print("Quick Sort -> ");
         QuickSort.printArray(data1, data1.length);
