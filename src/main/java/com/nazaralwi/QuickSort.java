@@ -21,7 +21,7 @@ public class QuickSort {
         return (i + 1);
     }
 
-    static void quickSort(int[] arr, int low, int high) {
+    public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
             quickSort(arr, low, pi - 1);
@@ -29,7 +29,7 @@ public class QuickSort {
         }
     }
 
-    static void printArray(int[] arr, int size) {
+    public static void printArray(int[] arr, int size) {
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
         }
