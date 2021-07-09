@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        QuickSort quickSort = new QuickSort();
         MergeSort mergeSort = new MergeSort();
         int[] data1 = {1, 4, 4, 8, 19, 302, 482, 544, 233};
         int[] data2 = {482, 544, 19, 302, 1, 4, 4, 8, 233};
