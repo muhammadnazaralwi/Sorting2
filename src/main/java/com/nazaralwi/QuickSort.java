@@ -28,11 +28,4 @@ public class QuickSort {
             quickSort(arr, pi + 1, high);
         }
     }
-
-    public static void printArray(int[] arr, int size) {
-        for (int i = 0; i < size; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
 }

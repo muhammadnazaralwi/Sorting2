@@ -25,10 +25,7 @@ public class Main {
         QuickSort.quickSort(data1, 0, data1.length-1);
         MergeSort.sort(data2, 0, data2.length-1);
 
-        System.out.print("Quick Sort -> ");
-        QuickSort.printArray(data1, data1.length);
-
-        System.out.print("Merge Sort -> ");
-        MergeSort.printArray(data2);
+        System.out.println("Quick Sort -> " + Arrays.toString(data1));
+        System.out.println("Merge Sort -> " + Arrays.toString(data2));
     }
 }
