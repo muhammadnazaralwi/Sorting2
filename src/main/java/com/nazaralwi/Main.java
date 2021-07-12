@@ -1,11 +1,19 @@
 package com.nazaralwi;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int[] data1 = {1, 4, 4, 8, 19, 302, 482, 544, 233};
-        int[] data2 = {482, 544, 19, 302, 1, 4, 4, 8, 233};
+        Random random = new Random();
+
+        int[] data1 = new int[100];
+        int[] data2 = new int[100];
+
+        for (int i = 0; i < 100; i++) {
+            data1[i] = random.nextInt(500);
+            data2[i] = random.nextInt(500);
+        }
 
         System.out.println("Before");
         System.out.println("Quick Sort -> " + Arrays.toString(data1));
